@@ -17,6 +17,20 @@ const MyMoves = () => {
     const [apiStatus, setApiStatus] = useState(apiConstatnt.initial)
     const [estimateData, setEstimateData] = useState([])
 
+
+    //used data folder for json data for next steps
+    //fetching gives an error while converting to json
+
+
+    // useEffect(() => {
+    //     const fetchData = async() => {
+    //         const response = await fetch("http://test.api.boxigo.in/sample-data/")
+    //         const data = await response.json()
+    //     }
+    // },[])
+
+    
+
     useEffect(() => {
         setApiStatus(apiConstatnt.inProgress)
         const fetchData = () => {
