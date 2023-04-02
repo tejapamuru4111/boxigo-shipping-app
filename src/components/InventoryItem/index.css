@@ -1,0 +1,77 @@
+.house-furniture-ites-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #c7bebe;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.house-furniture-inventory-name {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(225, 123, 27);
+}
+
+.house-furniture-inventory-btn {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.total-numbeer-of-items {
+    font-size: 10px;
+    background-color: rgb(225, 123, 27);
+    color: #ffffff;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 40%;
+}
+
+.inventory-items-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 30px;
+    min-width: 100%;
+    overflow-y: auto;
+}
+
+.inventory-items-card-list {
+    list-style-type: none;
+    padding-left: 0px;
+    width: 350px;
+}
+
+.inventory-items-card-list-title {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.inventory-items-card-list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.inventory-items-card-list-item-name {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: lighter;
+    color: #525050;
+}
+
+.inventory-items-card-list-item-count {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: lighter;
+    color: #525050;
+    padding-left: 10px;
+}

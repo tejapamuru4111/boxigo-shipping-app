@@ -1,0 +1,117 @@
+.address-item-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-item-chaild {
+    width: 30%;
+}
+
+.address-item-from {
+    color: #222222;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.address-item-from-data {
+    margin-top: 0px;
+    color: #4c4a4a;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.address-item-request {
+    margin-top: 0px;
+    color: #e48a1c;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.address-shifting-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-shifting-details-des {
+    padding-left: 10px;
+    color: #4c4a4a;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.address-view-move-details-btn {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: rgb(234, 80, 14);
+    font-weight: lighter;
+    border: 3px solid rgb(234, 80, 14);
+    background-color: transparent;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.address-quote-await-btn {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    font-weight: lighter;
+    background-color: rgb(234, 80, 14);
+    padding: 6px 17px 6px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.address-shifting-details-danger {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.address-additional-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-additional-info-title {
+    color: #222222;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.address-additional-info-button {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    font-weight: lighter;
+    background-color: #222222;
+    padding: 6px 17px 6px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.address-additional-info-house {
+    color: #efa209;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.old-new-house-details {
+    color: #000000;
+    font-weight: lighter;
+}
+
+.house-furniture-ites-list {
+    list-style-type: none;
+    padding-left: 0px;
+}

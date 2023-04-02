@@ -1,0 +1,42 @@
+.my-moves-bg-card {
+    height: 100%;
+    width: 100%;
+}
+
+.my-moves-title {
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    color: #222222;
+}
+
+.my-moves-failure-card {
+    transform: translateY(50%);
+}
+
+.my-moves-failure-msg {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #f35555;
+    font-weight: lighter;
+}
+
+.my-moves-failure-retry-btn {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #f35555;
+    font-weight: lighter;
+    border: none;
+    background-color: rgb(232, 243, 115);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}   
+
+.my-moves-loader-card {
+    transform: translateY(50%);
+}
+
+.my-moves-success-card {
+    padding: 5px;
+}

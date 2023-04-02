@@ -1,0 +1,25 @@
+.nav-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.active-tab-styles {
+    border-left: 5px solid orange;
+}
+
+.nav-tab-name {
+    color: #222222;
+    font-family: "Roboto";
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.nav-tab-icon {
+    color: #222222;
+    font-weight: bold;
+    padding-left: 10px;
+}
