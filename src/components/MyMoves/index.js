@@ -29,14 +29,13 @@ const MyMoves = () => {
     //     }
     // },[])
 
-    
+
 
     useEffect(() => {
         setApiStatus(apiConstatnt.inProgress)
         const fetchData = () => {
             try {
                 setEstimateData(data.Customer_Estimate_Flow)
-                console.log(data.Customer_Estimate_Flow)
                 setApiStatus(apiConstatnt.success)
             }
             catch {
