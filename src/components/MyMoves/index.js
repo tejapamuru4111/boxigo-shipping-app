@@ -14,6 +14,8 @@ const apiConstatnt = {
 
 const MyMoves = () => {
     
+    document.title = "My Moves"
+
     const [apiStatus, setApiStatus] = useState(apiConstatnt.initial)
     const [estimateData, setEstimateData] = useState([])
 
