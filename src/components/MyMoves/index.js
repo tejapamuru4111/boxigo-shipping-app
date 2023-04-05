@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {ThreeDots} from 'react-loader-spinner'
-import data from '../../data/data.json'
+// import data from '../../data/data.json'
 import './index.css'
 
 import AddressItem from '../AddressItem'
@@ -14,38 +14,45 @@ const apiConstatnt = {
 
 const MyMoves = () => {
     
-    document.title = "My Moves"
+    document.title = "Boxigo App | My Moves"
 
     const [apiStatus, setApiStatus] = useState(apiConstatnt.initial)
     const [estimateData, setEstimateData] = useState([])
 
 
-    //used data folder for json data for next steps
-    //fetching gives an error while converting to json
-
-
-    // useEffect(() => {
-    //     const fetchData = async() => {
-    //         const response = await fetch("http://test.api.boxigo.in/sample-data/")
-    //         const data = await response.json()
-    //     }
-    // },[])
-
-
-
     useEffect(() => {
         setApiStatus(apiConstatnt.inProgress)
-        const fetchData = () => {
-            try {
+        const fetchData = async() => {
+            try{
+                const response = await fetch("http://test.api.boxigo.in/sample-data/")
+                const data = await response.json()
+                console.log(data)
                 setEstimateData(data.Customer_Estimate_Flow)
                 setApiStatus(apiConstatnt.success)
             }
-            catch {
+            catch(err) {
+                console.log(err)
                 setApiStatus(apiConstatnt.failure)
             }
         }
-        setTimeout(fetchData, 1000);
-    },[estimateData])
+        fetchData()
+    },[])
+
+
+
+    // useEffect(() => {
+    //     setApiStatus(apiConstatnt.inProgress)
+    //     const fetchData = () => {
+    //         try {
+    //             setEstimateData(data.Customer_Estimate_Flow)
+    //             setApiStatus(apiConstatnt.success)
+    //         }
+    //         catch {
+    //             setApiStatus(apiConstatnt.failure)
+    //         }
+    //     }
+    //     setTimeout(fetchData, 1000);
+    // },[estimateData])
 
     const successView = () => (
         <div className='my-moves-success-card'>
@@ -60,7 +67,6 @@ const MyMoves = () => {
     )
 
     const onRetryData = () => {
-        setEstimateData([])
     }
 
     const failureView = () => (

@@ -1,5 +1,5 @@
 const MyQuote = () => {
-    document.title = "My Quote"
+    document.title = "Boxigo App | Get Quote"
     return (
     <div>
         <h1>My Quote</h1>

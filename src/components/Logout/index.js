@@ -1,5 +1,5 @@
 const Logout = () => {
-    document.title = "Logout"
+    document.title = "Boxigo App | Logout"
     return (
     <div>
         <h1>Logout</h1>

@@ -1,5 +1,5 @@
 const MyProfile = () => {
-    document.title = "My Profile"
+    document.title = "Boxigo App | My Profile"
     return (
     <div>
         <h1>My Profile</h1>
